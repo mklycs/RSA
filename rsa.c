@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <gmp.h> //(GNU Multiple Precision Arithmetic Library)
+#include <gmp.h> //C has no built-in functions for large integers. Therefore, an additional library such as GMP (GNU Multiple Precision Arithmetic Library) must be used for certain operations. 
 
 int fermat_test(mpz_t n, int k){
     if(mpz_cmp_ui(n, 2) == 0) return 1; //if generated number is 2 -> return "true" (2 is a prime number)
